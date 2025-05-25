@@ -1,0 +1,138 @@
+/* Your existing CSS */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  /* border-bottom: 1px solid black; */
+  padding: 0 80px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.audi-logo {
+  height: 70px;
+  width: 90px;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+.nav-left a {
+  text-decoration: none;
+  color: grey;
+  font-size: 18px;
+  padding: 20px;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    font-size: 25px
+}
+.nav-link:hover{
+    color: black;
+}
+
+/* New CSS for dropdown functionality */
+.active-nav-link {
+  color: black !important;
+  position: relative;
+  /* text-decoration: underline;
+  text-underline-offset: 3px; */
+}
+
+.active-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20px; /* Match your padding */
+  width: calc(100% - 40px); /* Account for padding */
+  height: 2px;
+  background-color: black; /*Match your hover color*/
+}
+
+/* Dropdown overlay */
+.dropdown-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  z-index: 90;
+}
+
+/* Dropdown container */
+.dropdown-container {
+  position: absolute;
+  top: 60px; /* Match your navbar height */
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 200px; /* Match your navbar padding */
+}
+
+.dropdown-content-inner {
+  display: flex;
+  justify-content: flex-start;
+  gap: 60px;
+}
+
+.dropdown-section {
+  min-width: 300px;
+}
+
+/* .dropdown-section h3 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #000;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+
+.dropdown-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-section li {
+  font-size: 18px;
+  margin-bottom: 28px;
+  color: grey;
+  cursor: pointer;
+  transition: color 0.2s;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.dropdown-section li:hover {
+  color: black; /* Match your hover color */
+}
+
+/* Media queries for responsive behavior */
+@media (max-width: 768px) {
+  .dropdown-content-inner {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .dropdown-wrapper {
+    padding: 20px;
+  }
+}

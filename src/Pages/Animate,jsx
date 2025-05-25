@@ -1,0 +1,12 @@
+// import Lottie from "lottie-react";
+// import car from '../assets/car.json';
+
+// function Animate() {
+//   return (
+//     <div style={{ width: 300, height: 300 }}>
+//       <Lottie animationData={car} loop={true} />
+//     </div>
+//   );
+// }
+
+// export default Animate;

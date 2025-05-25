@@ -1,0 +1,99 @@
+/* बेसिक स्टाइल्स */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+/*   
+  body {
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+  } */
+  
+  .container {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* स्क्रॉल इंट्रो सेक्शन */
+  .scroll-intro {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+  }
+  
+  .scroll-intro p {
+    font-size: small;
+    text-align: left;
+    padding: 0px 40px;
+    color: #333;
+  }
+  
+  /* हीरो सेक्शन */
+  .hero-section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://media.audi.com/is/image/audi/nemo/in/3_O-Homepage/E-tronHub-3840X4000.jpg?auto=webp&width=1920'); /* अपनी इमेज का पाथ यहां डालें */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* यह प्रॉपर्टी इमेज को फिक्स रखेगी */
+  }
+  
+  .text-container {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-container h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    color: #000;
+  }
+  
+  .text-container p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* कंटेंट सेक्शन */
+  .content-section {
+    min-height: 10vh;
+    background-color: #f5f5f5;
+    padding: 50px 20px;
+  }
+  
+  .content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .content-wrapper h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .content-wrapper p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }

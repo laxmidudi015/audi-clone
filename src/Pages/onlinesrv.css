@@ -1,0 +1,28 @@
+
+.onl-mn-dv{
+  /* border: 1px solid black; */
+  width: 49%;
+    height: 50vh;
+      margin-bottom: 15vh;
+}
+.onl-cont{
+    
+  
+    /* line-height: 40px; */
+}
+
+.onl-img{
+    height: 50vh;
+    margin-bottom: 20px;
+}
+.onl-img img{
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+}
+.onl-txt a{
+    /* text-decoration: none; */
+    color: black;
+    text-underline-offset: 5px;
+    /* text-decoration: underline; */
+}

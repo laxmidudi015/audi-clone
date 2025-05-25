@@ -1,0 +1,79 @@
+.Map{
+    height: 100vh;
+    display: flex;
+    /* flex-wrap: wrap; */
+    padding: 70px 70px;
+}
+.img-map{
+    height: 80vh;
+    width: 50%;
+    /* border: 15px solid black; */
+   
+}
+.img-map img{
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+}
+.map-content{
+    width: 50%;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    justify-content: center;
+}
+.map-content h1{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+.map-content button{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    width: 170px;
+    cursor: pointer;
+}
+.map-content button:hover{
+    background-color: rgb(77, 76, 76);
+    transition: all 1s;
+    /* border:1px solid  rgb(77, 76, 76) ; */
+}
+
+
+
+.audi-more-info{
+    display: flex;
+    height: 140vh;
+    background-color: black;
+    color: white;
+}
+.audi-info-text{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    width: 55%;
+    justify-content: end;
+}
+.audi-info-text p {
+    font-size: 40px;
+}
+.audi-info-btns button{
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 20px;
+  font-size: larger;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.audi-info-img{
+    width: 45%;
+     height: 140vh;
+}
+.audi-info-img img{
+    height: 140vh;
+    width: 100%;
+    object-fit: cover;
+}
