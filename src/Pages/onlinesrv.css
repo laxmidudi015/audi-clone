@@ -3,7 +3,7 @@
   /* border: 1px solid black; */
   width: 49%;
     height: 50vh;
-      margin-bottom: 15vh;
+      margin-bottom: 20vh;
 }
 .onl-cont{
     
@@ -25,4 +25,28 @@
     color: black;
     text-underline-offset: 5px;
     /* text-decoration: underline; */
+}
+/* Responsive for tablets and smaller screens */
+@media (max-width: 900px) {
+  .onl-mn-dv {
+    width: 100%;  /* Full width on smaller screens */
+    height: auto; /* Height automatic based on content */
+    margin-bottom: 8vh;
+  }
+  
+  .onl-img {
+    height: 300px; /* Thoda chhota height */
+    margin-bottom: 15px;
+  }
+
+  .onl-img img {
+    height: 100%;
+  }
+}
+
+/* Responsive for mobile phones */
+@media (max-width: 500px) {
+  .onl-img {
+    height: 220px; /* Aur chhota image height */
+  }
 }

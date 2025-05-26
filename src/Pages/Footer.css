@@ -1,70 +1,156 @@
-.footer{
-    background-color: black;
-    color: white;
-    padding: 20px 70px;
+/* Base styles you already have */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px 70px;
 }
 
-.footer-btn{
-    text-align: right;
-}
-.footer-btn button{
-     border: none;
-    background-color:black;
-    color: white;
-    font-size: x-small;
+.footer-btn {
+  text-align: right;
 }
 
-.sec-div{
-    margin-top: 8vh;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 60px;
+.footer-btn button {
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: x-small;
 }
 
-.sec-div h3{
-    margin-bottom: 8vh;
-    letter-spacing: 1px;
+.sec-div {
+  margin-top: 8vh;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 60px;
 }
 
-.sec-div ul{
-    list-style: none;
+.sec-div h3 {
+  margin-bottom: 8vh;
+  letter-spacing: 1px;
+}
+
+.sec-div ul {
+  list-style: none;
+  font-size: small;
+  line-height: 4vh;
+}
+
+.icons {
+  margin-top: 8vh;
+  text-align: right;
+  margin-bottom: 2vh;
+}
+
+.icons a {
+  text-decoration: none;
+  word-spacing: 40px;
+  color: white;
+}
+
+.footer-nav {
+  display: flex;
+  margin-top: 5vh;
+  margin-bottom: 8vh;
+}
+
+.footer-nav .items {
+  display: flex;
+  margin-left: 20px;
+}
+
+.footer-nav h6 {
+  margin-right: 30px;
+}
+
+.footer-para {
+  font-size: x-small;
+  line-height: 20px;
+}
+
+.footer-para p {
+  margin-bottom: 5vh;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .footer {
+    padding: 20px 30px;
+  }
+
+  .sec-div {
+    flex-wrap: wrap;
+    margin-right: 0;
+  }
+
+  .sec-div > div {
+    flex: 1 1 45%;
+    margin-bottom: 30px;
+  }
+
+  .sec-div h3 {
+    margin-bottom: 2vh;
+  }
+
+  .sec-div ul {
+    line-height: 2.5vh;
+    font-size: 0.8rem;
+  }
+
+  .icons {
+    text-align: center;
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+  }
+
+  .icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    word-spacing: normal;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+  }
+
+  .footer-nav .items {
+    margin-left: 0;
+    margin-top: 1vh;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-nav h6 {
+    margin: 5px 10px;
     font-size: small;
-    line-height: 4vh;
+  }
+
+  .footer-para {
+    font-size: 0.75rem;
+    line-height: 18px;
+    padding: 0 10px;
+  }
+
+  .footer-btn {
+    text-align: center;
+  }
+
+  .footer-btn button {
+    font-size: small;
+  }
 }
 
-.icons{
-    margin-top: 8vh;
-    text-align: right;
-   margin-bottom: 2vh;
-}
+@media (max-width: 500px) {
+  .sec-div > div {
+    flex: 1 1 100%;
+  }
 
+  .footer {
+    padding: 15px 15px;
+  }
 
-.icons a{
-    text-decoration: none;
-    word-spacing: 40px;
-    color: white;
-}
-
-.footer-nav{
-    display: flex;
-    margin-top: 5vh;
-    margin-bottom: 8vh;
-}
-
-.footer-nav .items{
-    display: flex; 
-    margin-left: 20px;
-}
-
-.footer-nav h6{
-    margin-right: 30px;
-}
-
-.footer-para{
-    font-size: x-small;
-    line-height: 20px;
-}
-
-.footer-para p{
-    margin-bottom: 5vh;
+  .footer-para p {
+    margin-bottom: 3vh;
+  }
 }

@@ -135,3 +135,77 @@
 .configure-btn:hover {
   background: #333;
 }
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .audi-models-page {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+  .models-section {
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+  .model-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .model-card {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .model-img {
+    height: auto;
+    max-height: 40vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  .models-section {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  .model-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .model-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .model-img {
+    max-height: 30vh;
+  }
+
+  .model-grid-btn {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .model-buttons {
+    margin: 8px 15px;
+  }
+
+  .discover-btn,
+  .configure-btn {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+}

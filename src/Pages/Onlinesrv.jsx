@@ -40,7 +40,7 @@ function Onlinesrv() {
               <img data-aos="zoom-in" src={item.img} alt="" />
             </div>
             <div className="onl-txt">
-              <h1 data-aos="slide-down">{item.heading}</h1>
+              <h1 >{item.heading}</h1>
               <Link to={"/"}>
                 {item.link}
                 <IoIosArrowForward style={{ marginBottom: "-3px" }} />

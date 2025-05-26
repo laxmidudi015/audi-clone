@@ -1,20 +1,45 @@
-/* .modal{
-  background-color: rgb(238, 227, 227);
-} */
-.modal p{
-    text-align: center;
-    font-size: 40px;
-    margin: 0;
-    padding-bottom: 20px;
-    padding-top: 40px;
+.modal p {
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  padding-bottom: 20px;
+  padding-top: 40px;
 }
-.modal a{
-    text-align: center;
-    text-decoration: none;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    color: black;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
+
+.modal a {
+  text-align: center;
+  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+  .modal p {
+    font-size: 28px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
+  .modal a {
+    padding-bottom: 30px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .modal p {
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .modal a {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
 }

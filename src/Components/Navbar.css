@@ -125,14 +125,134 @@
   color: black; /* Match your hover color */
 }
 
-/* Media queries for responsive behavior */
+/* RESPONSIVE MEDIA QUERIES */
+
+/* Large tablets and small desktops (992px and down) */
+@media (max-width: 992px) {
+  .nav {
+    padding: 0 40px;
+  }
+  
+  .nav-left a {
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  .dropdown-wrapper {
+    padding: 60px 100px;
+  }
+  
+  .dropdown-content-inner {
+    gap: 40px;
+  }
+  
+  .dropdown-section {
+    min-width: 250px;
+  }
+}
+
+/* Tablets (768px and down) */
 @media (max-width: 768px) {
+  .nav {
+    padding: 0 20px;
+    height: 50px;
+  }
+  
+  .audi-logo {
+    height: 50px;
+    width: 65px;
+  }
+  
+  .nav-left a {
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  .nav-right {
+    font-size: 20px;
+  }
+  
+  .dropdown-container {
+    top: 50px;
+  }
+  
+  .dropdown-wrapper {
+    padding: 30px 20px;
+  }
+  
   .dropdown-content-inner {
     flex-direction: column;
     gap: 20px;
   }
   
+  .dropdown-section {
+    min-width: auto;
+    width: 100%;
+  }
+  
+  .dropdown-section li {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .active-nav-link::after {
+    left: 10px;
+    width: calc(100% - 20px);
+  }
+}
+
+/* Small mobile devices (480px and down) */
+@media (max-width: 480px) {
+  .nav {
+    padding: 0 15px;
+    height: 45px;
+  }
+  
+  .audi-logo {
+    height: 40px;
+    width: 55px;
+  }
+  
+  .nav-left a {
+    font-size: 12px;
+    padding: 8px;
+  }
+  
+  .nav-right {
+    font-size: 18px;
+  }
+  
+  .dropdown-container {
+    top: 45px;
+  }
+  
   .dropdown-wrapper {
-    padding: 20px;
+    padding: 20px 15px;
+  }
+  
+  .dropdown-section li {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+}
+
+/* Extra small devices (360px and down) */
+@media (max-width: 360px) {
+  .nav {
+    padding: 0 10px;
+  }
+  
+  .nav-left a {
+    font-size: 11px;
+    padding: 6px;
+  }
+  
+  .dropdown-wrapper {
+    padding: 15px 10px;
+  }
+  
+  .dropdown-section li {
+    font-size: 13px;
+    margin-bottom: 12px;
   }
 }

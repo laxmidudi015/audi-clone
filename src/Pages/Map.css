@@ -1,65 +1,67 @@
-.Map{
-    height: 100vh;
-    display: flex;
-    /* flex-wrap: wrap; */
-    padding: 70px 70px;
-}
-.img-map{
-    height: 80vh;
-    width: 50%;
-    /* border: 15px solid black; */
-   
-}
-.img-map img{
-    height: 80vh;
-    width: 100%;
-    object-fit: cover;
-}
-.map-content{
-    width: 50%;
-    margin-left: 70px;
-    display: flex;
-    flex-direction: column;
-    /* text-align: center; */
-    justify-content: center;
-}
-.map-content h1{
-    margin-bottom: 50px;
-    letter-spacing: 2px;
-}
-.map-content button{
-    background-color: black;
-    color: white;
-    padding: 20px;
-    font-size: 18px;
-    width: 170px;
-    cursor: pointer;
-}
-.map-content button:hover{
-    background-color: rgb(77, 76, 76);
-    transition: all 1s;
-    /* border:1px solid  rgb(77, 76, 76) ; */
+.Map {
+  height: 100vh;
+  display: flex;
+  padding: 70px 70px;
 }
 
-
-
-.audi-more-info{
-    display: flex;
-    height: 140vh;
-    background-color: black;
-    color: white;
+.img-map {
+  height: 80vh;
+  width: 50%;
 }
-.audi-info-text{
-    display: flex;
-    flex-direction: column;
-    padding: 100px;
-    width: 55%;
-    justify-content: end;
+
+.img-map img {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
 }
+
+.map-content {
+  width: 50%;
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.map-content h1 {
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+.map-content button {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+  width: 170px;
+  cursor: pointer;
+}
+
+.map-content button:hover {
+  background-color: rgb(77, 76, 76);
+  transition: all 1s;
+}
+
+.audi-more-info {
+  display: flex;
+  height: 140vh;
+  background-color: black;
+  color: white;
+}
+
+.audi-info-text {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  width: 55%;
+  justify-content: end;
+}
+
 .audi-info-text p {
-    font-size: 40px;
+  font-size: 40px;
 }
-.audi-info-btns button{
+
+.audi-info-btns button {
   background-color: black;
   color: white;
   border: 1px solid white;
@@ -68,12 +70,89 @@
   margin-right: 10px;
   margin-top: 20px;
 }
-.audi-info-img{
-    width: 45%;
-     height: 140vh;
+
+.audi-info-img {
+  width: 45%;
+  height: 140vh;
 }
-.audi-info-img img{
-    height: 140vh;
+
+.audi-info-img img {
+  height: 140vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* -------------------- */
+/* 🎯 Responsive Design */
+/* -------------------- */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .Map {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .img-map,
+  .map-content {
     width: 100%;
-    object-fit: cover;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .img-map img {
+    height: auto;
+  }
+
+  .map-content {
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .audi-more-info {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .audi-info-text,
+  .audi-info-img {
+    width: 100%;
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .audi-info-text p {
+    font-size: 28px;
+  }
+
+  .audi-info-img img {
+    height: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .map-content button,
+  .audi-info-btns button {
+    width: 100%;
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .map-content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .audi-info-text p {
+    font-size: 22px;
+  }
+
+  .audi-info-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }

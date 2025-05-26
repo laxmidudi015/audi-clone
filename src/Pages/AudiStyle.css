@@ -17,7 +17,7 @@
   
   /* स्क्रॉल इंट्रो सेक्शन */
   .scroll-intro {
-    height: 20vh;
+    min-height: 20vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -97,3 +97,50 @@
     line-height: 1.6;
     margin-bottom: 1rem;
   }
+
+  @media (max-width: 1024px) {
+  .text-container {
+    left: 5%;
+    max-width: 400px;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+  .text-container h2 {
+    font-size: 1.8rem;
+  }
+  .text-container p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    left: 5%;
+    top: 60%;
+    transform: translate(-50%, -60%);
+    max-width: 90%;
+    padding: 15px;
+  }
+  .text-container h2 {
+    font-size: 1.5rem;
+  }
+  .text-container p {
+    font-size: 0.9rem;
+  }
+  .background-image {
+    background-attachment: fixed; 
+  }
+}
+
+@media (max-width: 480px) {
+  .text-container {
+    top: 55%;
+    padding: 12px;
+  }
+  .text-container h2 {
+    font-size: 1.3rem;
+  }
+  .text-container p {
+    font-size: 0.85rem;
+  }
+}
